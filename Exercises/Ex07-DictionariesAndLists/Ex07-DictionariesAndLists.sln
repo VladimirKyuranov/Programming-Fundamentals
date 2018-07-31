@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-SortTimes", "01-SortTimes\01-SortTimes.csproj", "{AA3D3972-530F-494E-9F93-002E5EA3CBB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-OddFilter", "02-OddFilter\02-OddFilter.csproj", "{69D33241-9921-4092-90EA-48096D25C11E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-ImmuneSystem", "03-ImmuneSystem\03-ImmuneSystem.csproj", "{CBF5D018-FE67-45DF-9DAB-478EC41EE2F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-SupermarketDatabase", "04-SupermarketDatabase\04-SupermarketDatabase.csproj", "{8584CF44-8232-435C-A519-7CC2D541848C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-ParkingValidation", "05-ParkingValidation\05-ParkingValidation.csproj", "{B32C223A-9701-425C-AD51-C9A4F51AD07A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-ByteFlip", "06-ByteFlip\06-ByteFlip.csproj", "{B19FFF43-E092-4DDD-881A-D9A9C5C8C6E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-TakeSkipRope", "07-TakeSkipRope\07-TakeSkipRope.csproj", "{B8497747-C7EB-4DD9-920F-8EF2F0A314F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA3D3972-530F-494E-9F93-002E5EA3CBB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA3D3972-530F-494E-9F93-002E5EA3CBB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA3D3972-530F-494E-9F93-002E5EA3CBB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA3D3972-530F-494E-9F93-002E5EA3CBB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69D33241-9921-4092-90EA-48096D25C11E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69D33241-9921-4092-90EA-48096D25C11E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69D33241-9921-4092-90EA-48096D25C11E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69D33241-9921-4092-90EA-48096D25C11E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBF5D018-FE67-45DF-9DAB-478EC41EE2F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF5D018-FE67-45DF-9DAB-478EC41EE2F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF5D018-FE67-45DF-9DAB-478EC41EE2F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF5D018-FE67-45DF-9DAB-478EC41EE2F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8584CF44-8232-435C-A519-7CC2D541848C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8584CF44-8232-435C-A519-7CC2D541848C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8584CF44-8232-435C-A519-7CC2D541848C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8584CF44-8232-435C-A519-7CC2D541848C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B32C223A-9701-425C-AD51-C9A4F51AD07A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B32C223A-9701-425C-AD51-C9A4F51AD07A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B32C223A-9701-425C-AD51-C9A4F51AD07A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B32C223A-9701-425C-AD51-C9A4F51AD07A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B19FFF43-E092-4DDD-881A-D9A9C5C8C6E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19FFF43-E092-4DDD-881A-D9A9C5C8C6E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19FFF43-E092-4DDD-881A-D9A9C5C8C6E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19FFF43-E092-4DDD-881A-D9A9C5C8C6E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8497747-C7EB-4DD9-920F-8EF2F0A314F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8497747-C7EB-4DD9-920F-8EF2F0A314F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8497747-C7EB-4DD9-920F-8EF2F0A314F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8497747-C7EB-4DD9-920F-8EF2F0A314F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F55CB605-F281-449D-9860-AFEC8098DD45}
+	EndGlobalSection
+EndGlobal
