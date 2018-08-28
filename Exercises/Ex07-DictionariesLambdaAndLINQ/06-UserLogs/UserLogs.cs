@@ -35,14 +35,8 @@ class UserLogs
         foreach (var user in logs)
         {
             Console.WriteLine($"{user.Key}:");
-            string ips = string.Empty;
-
-            foreach (var ip in user.Value)
-            {
-                ips += $"{ip.Key} => {ip.Value}, ";
-            }
-
-            ips = ips.Remove(ips.Length - 2) + ".";
+            string ips = string.Join(", ", user.Value
+                .Select(u => $"{u.Key} => {u.Value}")) + ".";
             Console.WriteLine(ips);
         }
     }

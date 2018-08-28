@@ -12,14 +12,12 @@ class SerbianUnleashed
 
         while ((input = Console.ReadLine()) != "End")
         {
-			string singer = input
-				.Split("@".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
-				.First();
-            string[] partyInfo = input
-                .Split("@".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
-                .Skip(1)
-                .ToArray()[0]
-                .ToString()
+            string[] tokens = input
+                .Split("@".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+
+            string singer = tokens[0];
+				
+            string[] partyInfo = tokens[1]
                 .Split()
                 .ToArray();
             string venue = string.Empty;
@@ -36,7 +34,6 @@ class SerbianUnleashed
                 }
                 catch (Exception)
                 {
-
                     venue += location + " ";
                 }
             }
