@@ -10,10 +10,10 @@ class PostOffice
         string[] input = Console.ReadLine()
             .Split('|', StringSplitOptions.RemoveEmptyEntries);
         string capitalsPattern = @"(?<symbol>[$#%*&])(?<capitals>[A-Z]+)\k<symbol>";
-        string firstLetterAndLengthPattern = @"(?<capital>6[5-9]|[78][0-9]|90):(?<length>\d{2})";
+        string lengthsPattern = @"(?<capital>6[5-9]|[78][0-9]|90):(?<length>\d{2})";
 
         char[] capitals = Regex.Match(input[0], capitalsPattern).Groups["capitals"].Value.ToCharArray();
-        MatchCollection lengths = Regex.Matches(input[1], firstLetterAndLengthPattern);
+        MatchCollection lengths = Regex.Matches(input[1], lengthsPattern);
         string[] words = input[2].Split();
         List<string> result = new List<string>();
 
