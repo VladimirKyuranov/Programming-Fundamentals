@@ -10,7 +10,6 @@ class GrainsOfSand
             .Split()
             .Select(int.Parse)
             .ToList();
-
         string input;
 
         while ((input = Console.ReadLine()) != "Mort")
@@ -23,20 +22,20 @@ class GrainsOfSand
             switch (command)
             {
                 case "Add":
-                    sands = Add(sands, value);
+                    Add(sands, value);
                     break;
                 case "Remove":
-                    sands = Remove(sands, value, index);
+                    Remove(sands, value, index);
                     break;
                 case "Replace":
                     int replacement = int.Parse(commandArgs[2]);
-                    sands = Replace(sands, value, replacement, index);
+                    Replace(sands, value, replacement, index);
                     break;
                 case "Increase":
-                    sands = Increase(sands, value);
+                    Increase(sands, value);
                     break;
                 case "Collapse":
-                    sands = Collapse(sands, value);
+                    Collapse(sands, value);
                     break;
             }
         }
@@ -50,13 +49,12 @@ class GrainsOfSand
         Console.WriteLine(result);
     }
 
-    private static List<int> Add(List<int> sands, int value)
+    private static void Add(List<int> sands, int value)
     {
         sands.Add(value);
-        return sands;
     }
 
-    private static List<int> Remove(List<int> sands, int value, int index)
+    private static void Remove(List<int> sands, int value, int index)
     {
         if (index != -1)
         {
@@ -69,21 +67,17 @@ class GrainsOfSand
                 sands.RemoveAt(value);
             }
         }
-
-        return sands;
     }
 
-    private static List<int> Replace(List<int> sands, int value, int replacement, int index)
+    private static void Replace(List<int> sands, int value, int replacement, int index)
     {
         if (index != -1)
         {
             sands[index] = replacement;
         }
-
-        return sands;
     }
 
-    private static List<int> Increase(List<int> sands, int value)
+    private static void Increase(List<int> sands, int value)
     {
         bool found = false;
         foreach (var sand in sands)
@@ -105,14 +99,10 @@ class GrainsOfSand
         {
             sands[elIndex] += value;
         }
-
-        return sands;
     }
 
-    private static List<int> Collapse(List<int> sands, int value)
+    private static void Collapse(List<int> sands, int value)
     {
         sands.RemoveAll(e => e < value);
-
-        return sands;
     }
 }
