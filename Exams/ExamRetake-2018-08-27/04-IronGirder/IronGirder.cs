@@ -91,7 +91,7 @@ class Town
 
     public override string ToString()
     {
-        string result = $"{this.Name} -> Time: {this.Time} -> Passemgers: {this.Passengers}";
+        string result = $"{this.Name} -> Time: {this.Time} -> Passengers: {this.Passengers}";
         return result;
     }
 }

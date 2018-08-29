@@ -22,7 +22,7 @@ class PostOffice
             {
                 char capital = (char)int.Parse(match.Groups["capital"].Value);
                 int length = int.Parse(match.Groups["length"].Value);
-                if (capitals.Contains(capital))
+                if (capitals.Contains(capital.ToString()))
                 {
                     string wordPattern = $@"^{capital}[^ ]{{{length}}}$";
                     if (Regex.IsMatch(word, wordPattern))
