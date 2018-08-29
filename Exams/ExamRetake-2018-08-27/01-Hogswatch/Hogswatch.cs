@@ -13,6 +13,7 @@ class Hogswatch
         for (int home = 1; home <= homes; home++)
         {
             int children = int.Parse(Console.ReadLine());
+
             if (presents >= children)
             {
                 presents -= children;
