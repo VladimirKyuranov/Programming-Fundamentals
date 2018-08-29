@@ -37,7 +37,7 @@ class IronGirder
             {
                 if (towns[townName].Time > time || towns[townName].Time == 0)
                 {
-                    towns[townName].ChangeTime(time);
+                    towns[townName].UpdateTime(time);
                 }
 
                 towns[townName].AddPassengers(passengers);
@@ -64,11 +64,11 @@ class Town
     }
 
     public string Name { get; private set; }
+
     public int Time { get; private set; }
 
     public int Passengers { get; private set; }
-
-
+    
     public void AddPassengers(int passengers)
     {
         this.Passengers += passengers;
@@ -78,13 +78,14 @@ class Town
     {
         this.Time = 0;
         this.Passengers -= passengers;
+
         if (this.Passengers < 0)
         {
             this.Passengers = 0;
         }
     }
 
-    public void ChangeTime(int time)
+    public void UpdateTime(int time)
     {
         this.Time = time;
     }
