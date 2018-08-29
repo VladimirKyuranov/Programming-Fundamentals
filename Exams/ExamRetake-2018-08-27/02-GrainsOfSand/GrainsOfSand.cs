@@ -33,7 +33,7 @@ class GrainsOfSand
                     sands = Replace(sands, value, replacement, index);
                     break;
                 case "Increase":
-                    sands = Increase(sands, value, index);
+                    sands = Increase(sands, value);
                     break;
                 case "Collapse":
                     sands = Collapse(sands, value);
@@ -83,9 +83,20 @@ class GrainsOfSand
         return sands;
     }
 
-    private static List<int> Increase(List<int> sands, int value, int index)
+    private static List<int> Increase(List<int> sands, int value)
     {
-        if (index == -1)
+        bool found = false;
+        foreach (var sand in sands)
+        {
+            if (sand >= value)
+            {
+                value = sand;
+                found = true;
+                break;
+            }
+        }
+
+        if (found == false)
         {
             value = sands.Last();
         }
