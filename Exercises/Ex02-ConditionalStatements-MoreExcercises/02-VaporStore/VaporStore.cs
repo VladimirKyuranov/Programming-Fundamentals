@@ -56,7 +56,7 @@ class VaporStore
                 money -= gamePrice;
                 Console.WriteLine($"{boughtGame}");
                 Console.WriteLine("Out of money!");
-                return;
+                Environment.Exit(0);
             }
             else
             {
